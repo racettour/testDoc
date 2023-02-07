@@ -1,0 +1,378 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>merge &#8212; Documentation URBANEASE 1.0</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../_static/translations.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="fr">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Documentation URBANEASE 1.0</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Contents:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../modules.html">
+   Scripts_VF
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../import_api.html">
+     import_api module
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../import_management.html">
+     import_management module
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../main.html">
+     main module
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../merge.html">
+     merge module
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../save_password.html">
+     save_password module
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1></h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <h1>Code source de merge</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">pickle</span>
+<span class="kn">import</span> <span class="nn">sqlalchemy</span>
+<span class="kn">import</span> <span class="nn">tkinter</span> <span class="k">as</span> <span class="nn">tk</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">ttk</span>
+<span class="kn">from</span> <span class="nn">tkinter.messagebox</span> <span class="kn">import</span> <span class="n">showwarning</span><span class="p">,</span> <span class="n">showinfo</span>
+
+
+<div class="viewcode-block" id="load_merge"><a class="viewcode-back" href="../merge.html#merge.load_merge">[docs]</a><span class="k">def</span> <span class="nf">load_merge</span><span class="p">(</span><span class="n">liste_colonnes</span><span class="p">,</span> <span class="n">tab3_v1</span><span class="p">,</span> <span class="n">tkinter_tab</span><span class="p">,</span> <span class="n">tkinter_root</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Création de la suite de l&#39;interface graphique et jointure dans tables siren_profil et companies_owning_parcels dans DBeaver.</span>
+<span class="sd">    </span>
+<span class="sd">    :param liste_colonnes: Liste des données à récupérer depuis l&#39;API SIRENE.</span>
+<span class="sd">    :param tkinter_tab: Onglet tkinter à modifier.</span>
+<span class="sd">    :param tkinter_root: Fenêtre principale à modifier.</span>
+<span class="sd">    :return: None.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># récupération du nom du profil</span>
+    <span class="n">profil</span> <span class="o">=</span> <span class="n">tab3_v1</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+    <span class="c1"># déclaration du chemin d&#39;accès au fichier pickle contenant les informations du profil</span>
+    <span class="n">profil_gene</span> <span class="o">=</span> <span class="s2">&quot;./save/&quot;</span> <span class="o">+</span> <span class="n">profil</span> <span class="o">+</span> <span class="s2">&quot;.pkl&quot;</span>
+    <span class="c1"># récupération du nom de la table siren_profil</span>
+    <span class="n">table_enregistrement</span> <span class="o">=</span> <span class="s2">&quot;siren_&quot;</span> <span class="o">+</span> <span class="n">profil</span>
+
+    <span class="c1"># on essaie de charger les données profil et de faire la connexion avec dBeaver</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">profil_gene</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+            <span class="c1"># Chargement des données profil utilisateur dbeaver</span>
+            <span class="n">password</span><span class="p">,</span> <span class="n">dbeaver_username</span><span class="p">,</span> <span class="n">dbeaver_server</span><span class="p">,</span> <span class="n">dbeaver_database</span> <span class="o">=</span> \
+                <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+
+            <span class="c1"># Création du moteur de connexion à dbeaver avec sqlalchemy</span>
+            <span class="n">dbeaver</span> <span class="o">=</span> <span class="s2">&quot;postgresql+psycopg2://&quot;</span> <span class="o">+</span> <span class="n">dbeaver_username</span> <span class="o">+</span> \
+                      <span class="s2">&quot;:&quot;</span> <span class="o">+</span> <span class="n">password</span> <span class="o">+</span> <span class="s2">&quot;@&quot;</span> <span class="o">+</span> \
+                      <span class="n">dbeaver_server</span> <span class="o">+</span> <span class="s2">&quot;/&quot;</span> <span class="o">+</span> <span class="n">dbeaver_database</span>
+            <span class="n">engine</span> <span class="o">=</span> <span class="n">sqlalchemy</span><span class="o">.</span><span class="n">create_engine</span><span class="p">(</span><span class="n">dbeaver</span><span class="p">,</span> <span class="n">echo</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="k">except</span><span class="p">:</span>
+        <span class="c1"># si ca ne marche pas, on affiche un warning</span>
+        <span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Nom d&#39;utilisateur ou informations de connexion à DBeaver erronés.&quot;</span>
+        <span class="n">showwarning</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">message</span><span class="o">=</span><span class="n">text</span><span class="p">)</span>
+
+        <span class="c1"># Si la connexion DBeaver n&#39;a pas été établie, la fonction se termine ici avec la commande &quot;return&quot;</span>
+        <span class="k">return</span>
+
+    <span class="c1"># on ajoute des informations/sélections à l&#39;onglet 3</span>
+    <span class="c1"># ============= ligne 2  tab 3 ==================</span>
+    <span class="c1"># affichage/sélection du nom de la table &#39;gauche&#39; (celle qui reçoit les données de siren_profil)</span>
+    <span class="n">ttk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">tkinter_tab</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Left table&quot;</span><span class="p">)</span> \
+        <span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+    <span class="c1"># input box</span>
+    <span class="n">tab3_v2</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">StringVar</span><span class="p">()</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;companies_owning_parcels&quot;</span>
+    <span class="n">tab3_v2</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+    <span class="n">ttk</span><span class="o">.</span><span class="n">Entry</span><span class="p">(</span><span class="n">tkinter_tab</span><span class="p">,</span> <span class="n">textvariable</span><span class="o">=</span><span class="n">tab3_v2</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span> \
+        <span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+    <span class="c1"># ============= ligne 3  tab 3 ==================</span>
+    <span class="c1"># affichage du nom de la table siren_profil</span>
+    <span class="n">ttk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">tkinter_tab</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Right table&quot;</span><span class="p">)</span> \
+        <span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+    <span class="n">ttk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">tkinter_tab</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="n">table_enregistrement</span><span class="p">)</span> \
+        <span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+    <span class="c1"># déclaration du bouton qui lance la jointure</span>
+    <span class="n">ttk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">tkinter_tab</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Left join&quot;</span><span class="p">,</span>
+               <span class="n">command</span><span class="o">=</span><span class="k">lambda</span><span class="p">:</span> <span class="n">merge</span><span class="p">(</span><span class="n">table_enregistrement</span><span class="p">,</span> <span class="n">tab3_v2</span><span class="o">.</span><span class="n">get</span><span class="p">(),</span> <span class="n">engine</span><span class="p">,</span> <span class="n">liste_colonnes</span><span class="p">))</span> \
+        <span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+    <span class="n">tkinter_root</span><span class="o">.</span><span class="n">update_idletasks</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="merge"><a class="viewcode-back" href="../merge.html#merge.merge">[docs]</a><span class="k">def</span> <span class="nf">merge</span><span class="p">(</span><span class="n">right_table</span><span class="p">,</span> <span class="n">left_table</span><span class="p">,</span> <span class="n">engine</span><span class="p">,</span> <span class="n">liste_colonnes</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Jointure des tables siren_profil et companies_owning_parcels dans DBeaver.</span>
+<span class="sd">    </span>
+<span class="sd">    :param right_table: Table &#39;droite&#39; siren_profil contenant les données API SIRENE à joindre à l&#39;autre table.</span>
+<span class="sd">    :param left_table: Table &#39;gauche&#39; companies_owning_parcels qui reçoit les données API SIRENE.</span>
+<span class="sd">    :param engine: Moteur de connexion à dbeaver.</span>
+<span class="sd">    :param liste_colonnes: Liste des données à récupérer dans l&#39;API SIRENE.</span>
+<span class="sd">    :return: None.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># suppression de la colonne &#39;siren&#39; dans la liste des colonnes à joindre</span>
+    <span class="n">liste_colonnes</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;siren&#39;</span><span class="p">)</span>
+
+    <span class="c1"># déclaration de la commande SQL permettant de créer les nouvelles colonnes des données de l&#39;API SIRENE</span>
+    <span class="n">sql_commande1</span> <span class="o">=</span> <span class="s1">&#39;ALTER TABLE &#39;</span> <span class="o">+</span> <span class="n">left_table</span> <span class="o">+</span> \
+                    <span class="s1">&#39; ADD column IF NOT exists nic text,&#39;</span> <span class="o">+</span> \
+                    <span class="s1">&#39; ADD column IF NOT exists siret text,&#39;</span> <span class="o">+</span> \
+                    <span class="s1">&#39; ADD column IF NOT exists dateCreationUniteLegale varchar(255),&#39;</span> <span class="o">+</span> \
+                    <span class="s1">&#39; ADD column IF NOT exists denominationUniteLegale varchar(255),&#39;</span> <span class="o">+</span> \
+                    <span class="s1">&#39; ADD column IF NOT exists nomUniteLegale varchar(255),&#39;</span> <span class="o">+</span> \
+                    <span class="s1">&#39; ADD column IF NOT exists nomUsageUniteLegale varchar(255),&#39;</span> <span class="o">+</span> \
+                    <span class="s1">&#39; ADD column IF NOT exists prenom1UniteLegale varchar(255),&#39;</span> <span class="o">+</span> \
+                    <span class="s1">&#39; ADD column IF NOT exists prenom2UniteLegale varchar(255),&#39;</span> <span class="o">+</span> \
+                    <span class="s1">&#39; ADD column IF NOT exists prenom3UniteLegale varchar(255),&#39;</span> <span class="o">+</span> \
+                    <span class="s1">&#39; ADD column IF NOT exists prenom4UniteLegale varchar(255),&#39;</span> <span class="o">+</span> \
+                    <span class="s1">&#39; ADD column IF NOT exists prenomUsuelUniteLegale varchar(255);&#39;</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># exécution de la commande SQL avec le moteur sqlalchemy</span>
+        <span class="n">engine</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">sql_commande1</span><span class="p">)</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+
+    <span class="k">except</span><span class="p">:</span>
+        <span class="c1"># bug constaté avec le &#39;engine.execute&#39; mais la commande SQL est bien exécutée</span>
+        <span class="c1"># ce subterfuge permet d&#39;ignorer l&#39;erreur</span>
+        <span class="k">pass</span>
+
+    <span class="c1"># déclaration de la commande SQL permettant de mettre à jour (jointure)</span>
+    <span class="c1"># les nouvelles colonnes des données de l&#39;API SIRENE</span>
+    <span class="k">for</span> <span class="n">i_list</span> <span class="ow">in</span> <span class="n">liste_colonnes</span><span class="p">:</span>
+        <span class="n">sql_commande2</span> <span class="o">=</span> <span class="s1">&#39;UPDATE &#39;</span> <span class="o">+</span> <span class="n">left_table</span> <span class="o">+</span> \
+                        <span class="s1">&#39; SET  &#39;</span> <span class="o">+</span> <span class="n">i_list</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39;=&#39;</span> <span class="o">+</span> <span class="n">right_table</span> <span class="o">+</span> <span class="s1">&#39;.&quot;&#39;</span> <span class="o">+</span> <span class="n">i_list</span> <span class="o">+</span> <span class="s1">&#39;&quot;&#39;</span> <span class="o">+</span> \
+                        <span class="s1">&#39; FROM &#39;</span> <span class="o">+</span> <span class="n">right_table</span> <span class="o">+</span> \
+                        <span class="s1">&#39; WHERE &#39;</span> <span class="o">+</span> <span class="n">left_table</span> <span class="o">+</span> <span class="s1">&#39;.siren  = &#39;</span> <span class="o">+</span> <span class="n">right_table</span> <span class="o">+</span> <span class="s1">&#39;.&quot;siren&quot;;&#39;</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="c1"># exécution de la commande SQL avec le moteur sqlalchemy</span>
+            <span class="n">engine</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">sql_commande2</span><span class="p">)</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+
+        <span class="k">except</span><span class="p">:</span>
+            <span class="c1"># bug constaté avec le &#39;engine.execute&#39; mais la commande SQL est bien exécutée</span>
+            <span class="c1"># ce subterfuge permet d&#39;ignorer l&#39;erreur</span>
+            <span class="k">pass</span>
+
+    <span class="c1"># affichage d&#39;un message de confirmation de jointure</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Jointure réussie&quot;</span>
+    <span class="n">showinfo</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">message</span><span class="o">=</span><span class="n">text</span><span class="p">)</span></div>
+</pre></div>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Raphael<br/>
+  
+      &copy; Copyright 2023, Raphael.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
